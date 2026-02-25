@@ -283,6 +283,91 @@ margin: 20px;
 
 }
 
+/* Contact Styling */
+.contact {
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Map Styling */
+.contact-map {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.contact-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    
+    .contact-map {
+        order: -1; /* Puts map above form on mobile if preferred */
+        min-height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer1{
 
     display: flex;
